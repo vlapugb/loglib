@@ -15,7 +15,7 @@
 
 using namespace logger;
 
-namespace  log_app {
+namespace log_app {
     struct Options {
         std::optional<std::string> file;
         std::optional<std::string> socket;
@@ -133,7 +133,7 @@ namespace  log_app {
 int main(int argc, char **argv) {
     const auto opt = log_app::parse_args(argc, argv);
     if (!opt) return 2;
-    const auto& o = *opt;
+    const auto &o = *opt;
 
     auto sink = make_composite_or_single(o);
     if (!sink) return 1;
