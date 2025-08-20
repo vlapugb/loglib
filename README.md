@@ -22,8 +22,8 @@ ctest --output-on-failure           # запустить юнит-тесты
 ```
 
 В результате будут собраны:
-- `logger_static` (`liblogger.a`) – статическая библиотека
-- `logger_shared` (`liblogger.so`) – динамическая библиотека
+- `logger_static` (`liblogger_static.a`) – статическая библиотека
+- `logger_shared` (`liblogger_shared.so`) – динамическая библиотека
 - `log_app` – консольная утилита для записи логов
 - `stats_collector` – сбор статистики из сокета
 
